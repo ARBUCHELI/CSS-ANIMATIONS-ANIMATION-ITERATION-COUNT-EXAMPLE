@@ -1,0 +1,111 @@
+body {
+  
+}
+
+.container {
+  margin: 100px auto;
+  padding: 100px;
+  position: relative;
+  transform: rotate(45deg);
+  width: 100px;
+}
+
+.heart {
+  background: salmon;
+  height: 100px;
+  position: relative;
+  width: 100px;
+
+  animation-name: heartBeat;
+  -webkit-animation-name: heartBeat;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: 2;
+  -webkit-animation-iteration-count: 2;
+  animation-delay: 3;
+  -webkit-animation-delay: 3;
+}
+
+.heart:before {
+    background: salmon;
+    border-radius: 50%;
+    content: "";
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    width: 100px;
+  }
+  
+    .heart:after {
+    background: salmon;
+    border-radius: 50%;
+    content: "";
+    height: 100px;
+    left: -50px; 
+    position: absolute;
+    width: 100px; 
+  } 
+
+@keyframes heartBeat {
+   0% {
+    transform: scale(none);
+    -webkit-transform: scale(none);
+  }
+
+  20% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+  }
+  
+  30% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+  }
+  
+  45% {
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+  }
+  
+  50% {
+    transform: scale(none);
+    -webkit-transform: scale(none);
+  }
+  
+  100% {
+    transform: scale(none);
+    -webkit-transform: scale(none);
+  }
+}
+
+@-webkit-keyframes heartBeat {
+   0% {
+    transform: scale(none);
+    -webkit-transform: scale(none);
+  }
+
+  20% {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+  }
+  
+  30% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+  }
+  
+  45% {
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+  }
+  
+  50% {
+    transform: scale(none);
+    -webkit-transform: scale(none);
+  }
+  
+  100% {
+    transform: scale(none);
+    -webkit-transform: scale(none);
+  }
+}
